@@ -7,13 +7,15 @@ public class MArray {
 
         for (int i = 0; i <= 2; i++) {
             for (int row = 0; row < array[0].length; row++) {
-                System.out.print("x ");
+                System.out.print(" x ");
             }
             System.out.println();
+            System.out.println("__________________");
             for (int column = 0; column < array[1].length; column++) {
-                System.out.print("0 ");
+                System.out.print(" 0 ");
             }
             System.out.println();
+            System.out.println("__________________");
         }
     }
 }
