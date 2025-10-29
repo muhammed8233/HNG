@@ -2,25 +2,18 @@ package Arrays;
 
 public class MArray {
     public static void main(String[] args) {
+        int counter = 0;
         int[][] array = {{1, 2, 3, 4, 5, 6},{1, 2, 3, 4, 5, 6}};
 
-        int
-        array[0][0] = 1;
-        array[0][1] = 0;
-        array[0][2] = 1;
-        array[0][3] = 0;
-        array[0][4] = 1;
-        array[0][5] = 0;
-
-        System.out.println(array.length);
-
-//        for (int row = 0; row < array[0].length; row++) {
-//            for (int column = 0; column < array[1].length; column++) {
-//                System.out.print("1 ");
-//            }
-//            System.out.println();
-//        }
-
+        for (int i = 0; i <= 2; i++) {
+            for (int row = 0; row < array[0].length; row++) {
+                System.out.print("x ");
+            }
+            System.out.println();
+            for (int column = 0; column < array[1].length; column++) {
+                System.out.print("0 ");
+            }
+            System.out.println();
+        }
     }
-
 }
