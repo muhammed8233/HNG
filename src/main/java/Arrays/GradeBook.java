@@ -17,9 +17,9 @@ public class GradeBook {
         return courseName;
     }
 
-
     public void processGrades() {
         outputGrades();
+        System.out.printf("%nClass average is %.2f%n", getAverage());
         System.out.printf("%n%s %d%n%s %d%n%n", "Lowest grade in the grade book is", getMinimum(),
                 "Highest grade in the grade book is", getMaximum());
         outputBarChart();
@@ -39,17 +39,15 @@ public class GradeBook {
     public int getMaximum() {
         int highGrade = grades[0];
 
-
         for (int grade : grades) {
             if (grade > highGrade) {
                 highGrade = grade;
             }
         }
-
         return highGrade;
     }
 
-    public double getAverage(int[] setOfGrades) {
+    public double getAverage() {
         int total = 0;
 
         for (int grade : grades) {
@@ -82,11 +80,8 @@ public class GradeBook {
 
     public void outputGrades() {
         System.out.printf("The grades are:%n%n");
-
         for (int student = 0; student < grades.length; student++) {
             System.out.printf("Student %2d: %3d%n", student + 1 ,grades[student]);
         }
     }
 }
-
-
