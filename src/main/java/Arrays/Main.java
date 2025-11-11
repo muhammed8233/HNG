@@ -11,6 +11,7 @@ public class Main {
         MultipleArrayGradeBook multiple = new MultipleArrayGradeBook("CS101 Introduction to Java Programming", gradesArray);
         System.out.printf("Welcome to the grade book for%n%s%n%n", multiple.getCourseName());
         multiple.processGrades();
+        System.out.println();
         output();
 
 
@@ -20,15 +21,13 @@ public class Main {
         public static  void output () {
             String[][] boards = new String[6][6];
             for (int row = 0; row < boards.length; row++) {
-                for (int j = 0; j < boards[row].length; j++) {
-                    System.out.printf("%s ", boards[row][row]= "X");;
-                    System.out.printf("%s ", boards[j][j]= "O");;
+                for (int j = 0; j < boards.length; j++) {
+                    System.out.printf("%s ", boards[row][row]= "X");
+                    System.out.printf("%s ", boards[j][j]= "O");
                 }
                 System.out.println();
-                //System.out.println(Arrays.deepToString(boards));
             }
-            //System.out.print(Arrays.deepToString(boards));
-           // return boards;
+
         }
 
     }
