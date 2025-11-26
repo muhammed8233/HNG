@@ -17,6 +17,7 @@ public class SumOfDigit {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("Enter number");
         int number = input.nextInt();
         System.out.println(sum(number));
     }

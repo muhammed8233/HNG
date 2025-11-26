@@ -14,7 +14,7 @@ public class NumberUtils {
     }
 
     public static void main(String[] args) {
-        System.out.println(isNarcissistic(153));
+        System.out.println(isNarcissistic(122));
     }
 
 }
