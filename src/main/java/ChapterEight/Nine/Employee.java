@@ -23,7 +23,7 @@ public abstract class Employee {
     @Override
     public String toString(){
         return String.format("%s %s%n social security number: %s ", getFirstName(),
-                getLastName(), getSocialSecurityNumber())
+                getLastName(), getSocialSecurityNumber());
     }
 
     public abstract double earnings();
